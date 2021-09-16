@@ -8,3 +8,8 @@
     border: 0;
     clip: rect(0 0 0 0);
   }
+  *,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
