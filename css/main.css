@@ -174,7 +174,7 @@ img {
   margin: auto;
 }
 
-.box-title {
+.box__title {
   margin: auto;
   font-weight: 900;
   font-size: 44px;
@@ -185,7 +185,7 @@ img {
   max-width: 696px;
 }
 
-.box-title-btn {
+.box__btn {
   border-radius: 4px;
   justify-content: center;
   margin-top: 30px;
