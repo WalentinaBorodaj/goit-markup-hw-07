@@ -95,7 +95,7 @@
     margin-right: 7px;
   }
 }
-.modal-checkbox:checked + &::before {
+.modal-checkbox:checked + ::before {
   padding: 3px;
   background-image: url(../images/vector.svg);
   background-color: var(--accent-color);
@@ -104,8 +104,8 @@
   border: none;
   background-position: center;
 }
-.modal-checkbox:focus + &::before,
-.modal-checkbox:hover + &::before {
+.modal-checkbox:focus + ::before,
+.modal-checkbox:hover + ::before {
   border-color: var(--accent-color);
 }
 .modal-button {
