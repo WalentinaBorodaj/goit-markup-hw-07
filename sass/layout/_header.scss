@@ -1,20 +1,20 @@
-.page-header {
+.header {
     border-bottom: 1px solid #ececec;
   }
-  .page-header .container {
+  .header__container .container {
     display: flex;
     align-items: center;
   }
-  .main-nav {
+  .nav {
     align-items: center;
   }
   
-  .site-nav,
-  .site-nav-contacts,
-  .main-nav {
+  .nav__list,
+  .auto-nav,
+  .nav {
     display: flex;
   }
-  .logo {
+  .header__logo {
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
@@ -27,10 +27,10 @@
     padding-bottom: 25px;
   }
   
-  .logo-text {
+  .header__logo-text {
     color: var(--accent-color);
   }
-  .main-nav-link {
+  .nav__link {
     display: inline-block;
     position: relative;
     font-weight: 500;
@@ -52,27 +52,27 @@
   .current {
     color: var(--accent-color);
   }
-  .header-icon {
+  .nav__ikon {
     fill: currentColor;
     margin-right: 10px;
   }
-  .header-item {
+  .nav__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
-  .site-nav-contacts {
+  .auto-nav {
     margin-left: auto;
     display: inline-block;
     display: flex;
     align-items: center;
   }
   
-  .site-nav-link {
+  .auto-nav__item {
     margin-right: 50px;
   }
   
-  .link-contacts {
+  .auto-nav__link {
     display: flex;
     align-items: center;
     font-weight: 500;

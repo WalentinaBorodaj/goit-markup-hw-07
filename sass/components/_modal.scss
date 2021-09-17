@@ -15,10 +15,10 @@
     
   }
   .modal-close-x {
-    .modal-button-x:focus + & {
+    .modal-button-x:focus  & {
       fill: var(--accent-color);
     }
-    .modal-button-x:hover + & {
+    .modal-button-x:hover  & {
       fill: var(--accent-color);
     }
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
