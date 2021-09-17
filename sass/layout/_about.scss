@@ -3,15 +3,15 @@
     padding-bottom: 94px;
   }
   
-  .about-list {
+  .about__list {
     display: flex;
   }
-  .about-item {
+  .about__item {
     &:not(:last-child) {
     margin-right: 30px;
   }
 }
-  .about-icon {
+  .about__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,13 +19,13 @@
     background: #f5f4fa;
     border-radius: 4px;
   }
-  .about-img {
+  .about__img {
     display: block;
     height: 120px;
     fill: #212121;
   }
   
-  .about-title {
+  .about__title {
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.03em;
@@ -37,7 +37,7 @@
   .features {
     margin-top: 0;
   }
-  .about-text {
+  .about__text {
     line-height: 1.71;
     letter-spacing: 0.03em;
   }

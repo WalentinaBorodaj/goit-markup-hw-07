@@ -3,13 +3,13 @@
   align-items: center;
   justify-content: center;
 }
-.social-item{
+.social__item{
   &:not(:last-child) {
      margin-right: 10px;
     }
 }  
 
-.social-link {
+.social__link {
   width: 100%;
   height: 100%;
   fill: #afb1b8;
@@ -30,6 +30,6 @@
   }
  
 }
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
