@@ -6,9 +6,11 @@
   .about-list {
     display: flex;
   }
-  .about-item:not(:last-child) {
+  .about-item {
+    &:not(:last-child) {
     margin-right: 30px;
   }
+}
   .about-icon {
     display: flex;
     align-items: center;
