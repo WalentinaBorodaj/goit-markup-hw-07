@@ -2,12 +2,14 @@
     text-decoration: none;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+   
   }
-  .card:hover,
-  .card:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+  
   .card-content {
     padding: 20px;
     border-bottom: 1px solid #eeeeee;
@@ -45,7 +47,8 @@
     margin-top: var(--card-set-gap);
     display: inline-block;
   }
-  .current-studio::after {
+  .current-studio {
+    &::after {
     content: '';
     display: block;
     position: absolute;
@@ -55,7 +58,9 @@
     border-radius: 2px;
     bottom: -1px;
   }
-  .current-portfolio::after {
+}
+  .current-portfolio{
+    &::after {
     content: '';
     display: block;
     position: absolute;
@@ -65,6 +70,7 @@
     border-radius: 2px;
     bottom: -1px;
   }
+}
   
   .overlay {
     position: absolute;
@@ -79,12 +85,11 @@
     overflow: auto;
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .card:focus + & {transform: translateY(0%);} 
+    .card:hover + & {transform: translateY(0%);} 
   }
   
-  .card:hover .overlay,
-  .card:focus .overlay {
-    transform: translateY(0%);
-  }
+  
   
   .card-thumb {
     position: relative;
