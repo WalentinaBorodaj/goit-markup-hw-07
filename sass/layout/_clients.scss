@@ -41,10 +41,10 @@
   
   .clients__icon {
     fill: #afb1b8;
-    .clients__link:hover + &{
+    .clients__link:hover  &{
       fill: #2196f3; 
     }
-    .clients__link:focus + &{
+    .clients__link:focus  &{
       fill: #2196f3; 
     }
   }
