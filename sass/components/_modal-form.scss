@@ -104,9 +104,15 @@
   border: none;
   background-position: center;
 }
-.modal-checkbox:focus  + ::before,
-.modal-checkbox:hover  + ::before {
-  border-color: var(--accent-color);
+// .modal-checkbox:focus  + ::before,
+// .modal-checkbox:hover  + ::before {
+//   border-color: var(--accent-color);
+// }
+.modal-checkbox{
+  &:focus + .modal-checkbox-label::before,
+  &:hover + .modal-checkbox-label::before {
+      border-color: var(--accent-color);
+  }
 }
 .modal-button {
   display: flex;

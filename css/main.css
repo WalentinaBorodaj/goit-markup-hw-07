@@ -898,8 +898,8 @@ img {
   background-position: center;
 }
 
-.modal-checkbox:focus + ::before,
-.modal-checkbox:hover + ::before {
+.modal-checkbox:focus + .modal-checkbox-label::before,
+.modal-checkbox:hover + .modal-checkbox-label::before {
   border-color: var(--accent-color);
 }
 
