@@ -732,11 +732,8 @@ img {
   overflow: auto;
 }
 
-.card:focus + .overlay {
-  transform: translateY(0%);
-}
-
-.card:hover + .overlay {
+.card:hover .overlay,
+.card:focus .overlay {
   transform: translateY(0%);
 }
 
